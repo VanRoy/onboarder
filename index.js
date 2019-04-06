@@ -31,7 +31,10 @@ app.get('/', (request, response) => {
        headers: { "Content-Type": "application/json" }
    };
    // You are nearly there!
-   client.post("http://onboarder.cleverapps.io/play", args, function (data, response) {
+   client.post("http://onboarder.cleverapps.io/play", args, function (data, response) {     
+     console.log("DATA");
+     console.log(data);
+     console.log("RESPONSE");
      console.log(response);
    });
    // If you want to dig further you should watch this: https://www.youtube.com/watch?v=CeaoTAXkIZE
